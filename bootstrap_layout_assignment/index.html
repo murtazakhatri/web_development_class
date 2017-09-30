@@ -10,10 +10,45 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container"> <!-- Main container of Todo App layout -->
   <div class="row">
-    <div class="col-sm-3 col-md-6 col-lg-4" style="background-color:yellow;">left bar</div>
-    <div class="col-sm-9 col-md-6 col-lg-8" style="background-color:pink;">right bar</div>
+    <!-- Left bar -->
+    <div class="col-sm-3 col-md-6 col-lg-4" style="background-color:yellow;">
+        <div class="row">
+          <div class="col-md-12">
+            <ul>
+               <li>inbox</li>
+               <li>today</li>
+               <li>week</li>
+             </ul>
+          </div>
+        </div>
+
+    </div>
+    <!-- Right bar -->
+    <div class="col-sm-9 col-md-6 col-lg-8" style="background-color:pink;">
+      <!-- This column furhter divide into two Rows 1. Add to do & 2. List down todos -->
+      <div class="row">
+        <div class="col-md-12" style="background-color:pink;">
+            <div class="row">
+              <!-- Added form to add tasks -->
+              <form>
+                 <div class="col-md-8"><input type="text"></input></div>
+                 <div class="col-md-4"><button >Add todo (+)</button></div>
+               </form>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+       <div class="col-md-12" style="background-color:pink;">
+         <ul>
+            <li><input type="checkbox"></input><span>Coffee<span></li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>
+       </div>
+      </div>
+    </div>
 
   </div>
 </div>
